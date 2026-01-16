@@ -1,0 +1,13 @@
+[package]
+name = "mwe-mem-dbg"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+mem_dbg = "0.3.3"
+# mem_dbg = "=0.3.2"
+sux = "0.10"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
